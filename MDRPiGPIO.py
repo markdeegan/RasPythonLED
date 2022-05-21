@@ -11,7 +11,7 @@ GPIO4: Final[int] = 7
 GPIO5: Final[int] = 29
 GPIO6: Final[int] = 31
 GPIO7: Final[int] = 26
-GPIO8: Final[int] = 24	
+GPIO8: Final[int] = 24
 GPIO9: Final[int] = 21
 GPIO10: Final[int] = 19
 GPIO11: Final[int] = 23
@@ -31,6 +31,3 @@ GPIO24: Final[int] = 18
 GPIO25: Final[int] = 22
 GPIO26: Final[int] = 37
 GPIO27: Final[int] = 13
-
-# define a constant for GPIO 27 = Pin 40
-GPIO27: Final[int] = 40

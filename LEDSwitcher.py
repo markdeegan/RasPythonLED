@@ -19,6 +19,8 @@ import RPi.GPIO as GPIO
 # this is a module I defined to alias GPIO numbers to Raspberry Pi pins
 import MDRPiGPIO
 
+LED1 = 40
+
 GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
 
@@ -68,7 +70,11 @@ exitButton  = Button(win, text = "Exit", font = myFont, command = exitProgram, h
 exitButton.pack(side = BOTTOM)
 
 # define a button called ledButton and set various parameters
-ledButton = Button(win, text = "LED ON", font = myFont, command = ledON, height = 2, width =8 )
-ledButton.pack()
+ledButton = Button(win, text = "LED 1 ON", font = myFont, command = ledON, height = 2, width =8 )
+ledButton.pack(side = LEFT)
+
+# define a button called ledButton and set various parameters
+ledButton2 = Button(win, text = "LED 2 ON", font = myFont, command = ledON, height = 2, width =8 )
+ledButton2.pack(side = RIGHT)
 
 mainloop()
