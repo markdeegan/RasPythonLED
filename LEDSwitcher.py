@@ -9,6 +9,7 @@ Pyton development of a GUI that works on the 3.5" LED screen on a Raspberry Pi 3
 Note 2 from the MacBook
 Note 3 from MacBook
 Note 4 from MacBook
+Note 5 from RPi
 
 """
 from tkinter import *
