@@ -6,7 +6,8 @@ This code is a sample to test the development of a touch-screen GUI
 on a 3.5" LED display on a Raspbeery Pi.
 
 Pyton development of a GUI that works on the 3.5" LED screen on a Raspberry Pi 3B
-Note from the MacBook
+Note 2 from the MacBook
+Note 3 from MacBook
 
 """
 from tkinter import *
@@ -20,7 +21,7 @@ GPIO.setwarnings(False)
 
 # set pin 40 as an output pin, likely to draw some current
 GPIO.setup(40, GPIO.OUT)
-# set the initial status of pin 40 to LOW 
+# set the initial status of pin 40 to LOW
 GPIO.output(40, GPIO.LOW)
 
 # create a new window called win
@@ -34,15 +35,15 @@ def ledON():
 	# print that the LED button has been pressed
 	print("LED button pressed")
 	# check the status of pin 40, and respond accordingly
-	# if it is HIGH, then 
+	# if it is HIGH, then
 	if GPIO.input(40):
-		# set status of pin 40 to LOW and 
+		# set status of pin 40 to LOW and
 		GPIO.output(40,GPIO.LOW)
 		# change the text displayed by the button to LED ON
 		ledButton["text"] = "LED ON"
 	# if it is LOW (else) then
 	else:
-		# set status of pin 40 to LOW and 
+		# set status of pin 40 to LOW and
 		GPIO.output(40,GPIO.HIGH)
 		# change the text displayed by the button to LED OFF
 		ledButton["text"] = "LED OFF"
@@ -60,7 +61,7 @@ win.title("LED Switcher")
 win.geometry('800x480')
 
 # define a button, called eitButton, and set various parameters
-exitButton  = Button(win, text = "Exit", font = myFont, command = exitProgram, height =2 , width = 6) 
+exitButton  = Button(win, text = "Exit", font = myFont, command = exitProgram, height =2 , width = 6)
 exitButton.pack(side = BOTTOM)
 
 # define a button called ledButton and set various parameters
