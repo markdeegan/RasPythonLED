@@ -74,7 +74,7 @@ ledOnButton.pack()
 
 # define a button called ledOFF Button and set various parameters
 ledOffButton = Button(win, text = "LED OFF", font = myFont, command = ledON, height = 2, width =8 )
-lefOffButton.pack()
+ledOffButton.pack()
 ledOffButton.pack_forget()
 
 
