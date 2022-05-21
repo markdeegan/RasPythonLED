@@ -1,6 +1,10 @@
 """
+
+MD20220521-01 LEDSwitcher.py
+
 This code is a sample to test the development of a touch-screen GUI
 on a 3.5" LED display on a Raspbeery Pi.
+
 """
 from tkinter import *
 import tkinter.font
