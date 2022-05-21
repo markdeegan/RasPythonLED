@@ -47,7 +47,7 @@ def ledON():
 
 def ledOFF():
 	# print that the LED Off button has been pressed
-	print"LEF Off Button Pressed")
+	print("LED Off Button Pressed")
 	GPIO.output(LEDPin,GPIO.LOW)
 	LEDStatus = False
 	ledOffButton.pack_forget()
