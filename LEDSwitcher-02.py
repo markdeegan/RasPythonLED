@@ -69,10 +69,10 @@ exitButton.pack(side = BOTTOM)
 
 # define a button called ledButton and set various parameters
 ledButton = Button(win, text = "LED 1 ON", font = myFont, command = ledON, height = 2, width =8 )
-ledButton.pack()
+ledButton.pack(side = LEFT)
 
 # define a button called ledButton and set various parameters
 ledButton2 = Button(win, text = "LED 2 ON", font = myFont, command = ledON, height = 2, width =8 )
-ledButton.pack()
+ledButton2.pack(side = RIGHT)
 
 mainloop()
