@@ -10,6 +10,7 @@ Note 2 from the MacBook
 Note 3 from MacBook
 Note 4 from MacBook
 Note 5 from RPi
+Note 6 from MacBook
 
 """
 from tkinter import *
