@@ -44,6 +44,7 @@ def ledON():
 	GPIO.output(LEDPin,GPIO.HIGH)
 	LEDStatus = True
 	ledOnButton.pack_forget()
+	ledOffButton.pack()
 
 def ledOFF():
 	# print that the LED Off button has been pressed
@@ -51,6 +52,7 @@ def ledOFF():
 	GPIO.output(LEDPin,GPIO.LOW)
 	LEDStatus = False
 	ledOffButton.pack_forget()
+	LedOnButton.pack()
 
 # define the exitProgram function
 def exitProgram():
@@ -75,7 +77,7 @@ ledOnButton.pack()
 # define a button called ledOFF Button and set various parameters
 ledOffButton = Button(win, text = "LED OFF", font = myFont, command = ledON, height = 2, width =8 )
 ledOffButton.pack()
-ledOffButton.pack_forget()
+# ledOffButton.pack_forget()
 
 
 mainloop()
