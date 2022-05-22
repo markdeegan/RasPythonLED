@@ -47,6 +47,7 @@ def ledON():
 	print("LED Status",LEDStatus)
 	ledOnButton.pack_forget()
 	ledOffButton.pack()
+	ledOffButton.configure(bg="yellow")
 
 def ledOFF():
 	# print that the LED Off button has been pressed
@@ -56,6 +57,8 @@ def ledOFF():
 	print("LED Status",LEDStatus)
 	ledOffButton.pack_forget()
 	ledOnButton.pack()
+	ledOnButton.configure(bg="blue") 
+
 
 # define the exitProgram function
 def exitProgram():
