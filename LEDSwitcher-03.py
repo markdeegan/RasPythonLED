@@ -52,7 +52,7 @@ def ledOFF():
 	GPIO.output(LEDPin,GPIO.LOW)
 	LEDStatus = False
 	ledOffButton.pack_forget()
-	LedOnButton.pack()
+	ledOnButton.pack()
 
 # define the exitProgram function
 def exitProgram():
