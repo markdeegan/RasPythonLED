@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """
 
 MD20220521-01 LEDSwitcher.py
