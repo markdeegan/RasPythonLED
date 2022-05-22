@@ -43,7 +43,7 @@ def ledON():
 	# set the status of pin 40 to HIGH
 	GPIO.output(LEDPin,GPIO.HIGH)
 	LEDStatus = True
-	print("LED Status ",LEDStatus)
+	print("LED Status",LEDStatus)
 	ledOnButton.pack_forget()
 	ledOffButton.pack()
 
@@ -52,7 +52,7 @@ def ledOFF():
 	print("LED Off Button Pressed")
 	GPIO.output(LEDPin,GPIO.LOW)
 	LEDStatus = False
-	print("LED Status ",LEDStatus)
+	print("LED Status",LEDStatus)
 	ledOffButton.pack_forget()
 	ledOnButton.pack()
 
