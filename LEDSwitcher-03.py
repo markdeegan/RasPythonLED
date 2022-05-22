@@ -46,7 +46,6 @@ def ledON():
 	LEDStatus = True
 	print("LED Status",LEDStatus)
 	ledOnButton.pack_forget()
-	ledOffButton.configure(bg="yellow")
 	ledOffButton.pack()
 
 def ledOFF():
@@ -56,7 +55,6 @@ def ledOFF():
 	LEDStatus = False
 	print("LED Status",LEDStatus)
 	ledOffButton.pack_forget()
-	ledOnButton.configure(bg="blue")
 	ledOnButton.pack()
 
 
@@ -81,9 +79,9 @@ ledOnButton = Button(win, text = "LED ON", font = myFont, command = ledON, heigh
 ledOnButton.pack()
 
 # define a button called ledOFF Button and set various parameters
-ledOffButton = Button(win, text = "LED OFF", font = myFont, command = ledOFF, height = 2, width =8 , bg='green')
-ledOffButton.pack()
-ledOffButton.pack_forget()
+ledOffButton = Button(win, text = "LED OFF", font = myFont, command = ledOFF, height = 2, width =8 , bg='red')
+# ledOffButton.pack()
+# ledOffButton.pack_forget()
 
 
 mainloop()
