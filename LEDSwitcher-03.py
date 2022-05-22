@@ -46,6 +46,8 @@ def ledON():
 	LEDStatus = True
 	print("LED Status",LEDStatus)
 	ledOnButton.pack_forget()
+	ledOffButton.config(background="red")
+	ledOffButton.update()
 	ledOffButton.pack()
 
 def ledOFF():
@@ -55,6 +57,8 @@ def ledOFF():
 	LEDStatus = False
 	print("LED Status",LEDStatus)
 	ledOffButton.pack_forget()
+	ledOnButton.config(background="green")
+	ledOnButton.update()
 	ledOnButton.pack()
 
 
