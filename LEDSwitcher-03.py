@@ -74,11 +74,11 @@ exitButton  = Button(win, text = "Exit", font = myFont, command = exitProgram, h
 exitButton.pack(side = BOTTOM)
 
 # define a button called ledON Button and set various parameters
-ledOnButton = Button(win, text = "LED ON", font = myFont, command = ledON, height = 2, width =8 )
+ledOnButton = Button(win, text = "LED ON", font = myFont, command = ledON, height = 2, width =8 , bg="green")
 ledOnButton.pack()
 
 # define a button called ledOFF Button and set various parameters
-ledOffButton = Button(win, text = "LED OFF", font = myFont, command = ledOFF, height = 2, width =8 )
+ledOffButton = Button(win, text = "LED OFF", font = myFont, command = ledOFF, height = 2, width =8 , bg="red")
 ledOffButton.pack()
 ledOffButton.pack_forget()
 
