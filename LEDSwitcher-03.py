@@ -21,9 +21,9 @@ LEDStatus = False
 GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
 
-# set pin 40 as an output pin, likely to draw some current
+# set LEDpin (40) as an output pin, likely to draw some current
 GPIO.setup(LEDPin, GPIO.OUT)
-# set the initial status of pin 40 to LOW
+# set the initial status of LEDPin(40) to LOW
 GPIO.output(LEDPin, GPIO.LOW)
 
 # create a new window called win
