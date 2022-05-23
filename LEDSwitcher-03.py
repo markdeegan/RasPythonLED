@@ -43,7 +43,7 @@ def exitProgram():
 	GPIO.cleanup()
 	win.quit()
 
-#####################
+##########################################
 # define the ledON function
 def ledON():
 	# print that the LEDOn button has been pressed
@@ -59,7 +59,7 @@ def ledON():
 	# show the ledOffButton
 	ledOffButton.pack()
 
-#####################
+##########################################
 # define the ledOff function
 def ledOFF():
 	# print that the LEDOff button has been pressed
@@ -77,14 +77,14 @@ def ledOFF():
 
 
 # define a button, called eitButton, and set various parameters
-exitButton  = Button(win, text = "Exit", font = myFont, command = exitProgram, height =2 , width = 6)
+exitButton  = tkinter.Button(win, text = "Exit", font = myFont, command = exitProgram, height =2 , width = 6)
 exitButton.pack(side = BOTTOM)
 
 # define a button called ledON Button and set various parameters
-ledOnButton = Button(win, text = "LED ON", font = myFont, command = ledON, height = 2, width =8)
+ledOnButton = tkinter.Button(win, text = "LED ON", font = myFont, command = ledON, height = 2, width =8)
 ledOnButton.pack()
 
 # define a button called ledOFF Button and set various parameters
-ledOffButton = Button(win, text = "LED OFF", font = myFont, command = ledOFF, height = 2, width =8)
+ledOffButton = tkinter.Button(win, text = "LED OFF", font = myFont, command = ledOFF, height = 2, width =8)
 
 mainloop()
