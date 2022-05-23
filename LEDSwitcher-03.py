@@ -7,11 +7,6 @@ This code is a sample to test the development of a touch-screen GUI
 on a 3.5" LED display on a Raspbeery Pi.
 
 Pyton development of a GUI that works on the 3.5" LED screen on a Raspberry Pi 3B
-Note 2 from the MacBook
-Note 3 from MacBook
-Note 4 from MacBook
-Note 5 from RPi
-Note 6 from MacBook
 
 """
 from tkinter import *
