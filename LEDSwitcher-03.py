@@ -75,10 +75,12 @@ exitButton.pack(side = BOTTOM)
 
 # define a button called ledON Button and set various parameters
 ledOnButton = Button(win, text = "LED ON", font = myFont, command = ledON, height = 2, width =8 , bg='blue')
+ledOnButton.config(bg='yellow')
 ledOnButton.pack()
 
 # define a button called ledOFF Button and set various parameters
 ledOffButton = Button(win, text = "LED OFF", font = myFont, command = ledOFF, height = 2, width =8 , bg='blue')
+ledOffButton.config(bg='yellow')
 # ledOffButton.pack()
 # ledOffButton.pack_forget()
 
