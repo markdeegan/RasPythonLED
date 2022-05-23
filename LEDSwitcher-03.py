@@ -46,24 +46,33 @@ def exitProgram():
 #####################
 # define the ledON function
 def ledON():
-	# print that the LED On button has been pressed
+	# print that the LEDOn button has been pressed
 	print("LED On button pressed")
-	# set the status of pin 40 to HIGH
+	# set the status of the relevant pin to HIGH
 	GPIO.output(LEDPin, GPIO.HIGH)
+	# and flip the status boolean, which should always map the relevant pin
 	LEDStatus = True
+	# diagnostics message
 	print("LED Status", LEDStatus)
+	# hide the ledOnButton
 	ledOnButton.pack_forget()
+	# show the ledOffButton
 	ledOffButton.pack()
 
 #####################
 # define the ledOff function
 def ledOFF():
-	# print that the LED Off button has been pressed
+	# print that the LEDOff button has been pressed
 	print("LED Off Button Pressed")
+	# set the status of the relevant pin to LOW
 	GPIO.output(LEDPin, GPIO.LOW)
+	# and flip the status boolean, which should always map the relevant pin
 	LEDStatus = False
+	# diagnostics message
 	print("LED Status", LEDStatus)
+	# hide the ledOffButton
 	ledOffButton.pack_forget()
+	# show the ledOnButton
 	ledOnButton.pack()
 
 
