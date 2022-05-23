@@ -44,6 +44,7 @@ def ledON():
 	ledOffButton.pack()
 	ledOffButton.config(background="red")
 	ledOffButton.update()
+	win.update()
 
 def ledOFF():
 	# print that the LED Off button has been pressed
@@ -55,6 +56,7 @@ def ledOFF():
 	ledOnButton.pack()
 	ledOnButton.config(background="green")
 	ledOnButton.update()
+	win.update()
 
 
 # define the exitProgram function
