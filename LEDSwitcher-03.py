@@ -42,9 +42,6 @@ def ledON():
 	print("LED Status",LEDStatus)
 	ledOnButton.pack_forget()
 	ledOffButton.pack()
-	ledOffButton.config(background="red")
-	ledOffButton.update()
-	win.update()
 
 def ledOFF():
 	# print that the LED Off button has been pressed
@@ -54,9 +51,6 @@ def ledOFF():
 	print("LED Status",LEDStatus)
 	ledOffButton.pack_forget()
 	ledOnButton.pack()
-	ledOnButton.config(background="green")
-	ledOnButton.update()
-	win.update()
 
 
 # define the exitProgram function
@@ -76,15 +70,11 @@ exitButton  = Button(win, text = "Exit", font = myFont, command = exitProgram, h
 exitButton.pack(side = BOTTOM)
 
 # define a button called ledON Button and set various parameters
-ledOnButton = Button(win, text = "LED ON", font = myFont, command = ledON, height = 2, width =8 , bg='blue')
-ledOnButton.config(bg='yellow')
+ledOnButton = Button(win, text = "LED ON", font = myFont, command = ledON, height = 2, width =8)
 ledOnButton.pack()
 
 # define a button called ledOFF Button and set various parameters
-ledOffButton = Button(win, text = "LED OFF", font = myFont, command = ledOFF, height = 2, width =8 , bg='blue')
+ledOffButton = Button(win, text = "LED OFF", font = myFont, command = ledOFF, height = 2, width =8)
 ledOffButton.config(bg='yellow')
-# ledOffButton.pack()
-# ledOffButton.pack_forget()
-
 
 mainloop()
