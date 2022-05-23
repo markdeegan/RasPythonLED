@@ -32,6 +32,23 @@ win = Tk()
 # set the font for the GUI elements
 myFont = tkinter.font.Font(family = 'Helvetica', size = 36, weight = 'bold')
 
+# set the title of the application window
+win.title("LED Switcher")
+# set the size of the app (to match the scree size, make this dynamic later)
+win.geometry('800x480')
+
+# define a button, called eitButton, and set various parameters
+exitButton  = Button(win, text = "Exit", font = myFont, command = exitProgram, height =2 , width = 6)
+exitButton.pack(side = BOTTOM)
+
+# define a button called ledON Button and set various parameters
+ledOnButton = Button(win, text = "LED ON", font = myFont, command = ledON, height = 2, width =8)
+ledOnButton.pack()
+
+# define a button called ledOFF Button and set various parameters
+ledOffButton = Button(win, text = "LED OFF", font = myFont, command = ledOFF, height = 2, width =8)
+
+
 # define the ledON function
 def ledON():
 	# print that the LED On button has been pressed
@@ -60,20 +77,5 @@ def exitProgram():
 	win.quit()
 
 
-# set the title of the application window
-win.title("LED Switcher")
-# set the size of the app (to match the scree size, make this dynamic later)
-win.geometry('800x480')
-
-# define a button, called eitButton, and set various parameters
-exitButton  = Button(win, text = "Exit", font = myFont, command = exitProgram, height =2 , width = 6)
-exitButton.pack(side = BOTTOM)
-
-# define a button called ledON Button and set various parameters
-ledOnButton = Button(win, text = "LED ON", font = myFont, command = ledON, height = 2, width =8)
-ledOnButton.pack()
-
-# define a button called ledOFF Button and set various parameters
-ledOffButton = Button(win, text = "LED OFF", font = myFont, command = ledOFF, height = 2, width =8)
 
 mainloop()
