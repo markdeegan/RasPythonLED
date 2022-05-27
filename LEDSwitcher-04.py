@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """
 
-MD20220521-01 LEDSwitcher.py
+MD20220527-01 LEDSwitcher-04.py
 
 This code is a sample to test the development of a touch-screen GUI
 on a 3.5" LED display on a Raspbeery Pi.
